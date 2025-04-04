@@ -1,0 +1,25 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+.bundle/
+
+# Ruby
+*.gem
+.bundle
+Gemfile.lock
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace 

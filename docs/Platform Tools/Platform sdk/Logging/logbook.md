@@ -4,14 +4,14 @@
 
 In our distributed microservices, **every request counts** — but without HTTP logs:
 
-- We can’t trace **failures across services**
+- We can't trace **failures across services**
 - Debugging becomes **guesswork**
 - Sensitive data may be logged **inconsistently**
-- It’s hard to **correlate** with tracing systems
+- It's hard to **correlate** with tracing systems
 
 ## ✅ Our Solution: Logbook via `platform-sdk`
 
-We’ve standardized HTTP logging using **Logbook**, bundled inside our internal **`platform-sdk`**.
+We've standardized HTTP logging using **Logbook**, bundled inside our internal **`platform-sdk`**.
 
 ### What it gives you:
 
@@ -83,7 +83,7 @@ You must set the following env var **in your container spec**:
   value: "true"   # or "false"
 ```
 
-![image.png](Logbook%20%E2%80%94%20Evolving%20Distributed%20Tracing%20&%20Observabi%201d2c0265ac648029addcc6e81a7425a7/image.png)
+![image.png](assets/6a37e7a7-c2d2-4d5b-9c09-a1afa146c95b.png)
 
 ### 📌 Behavior
 
@@ -96,11 +96,11 @@ You must set the following env var **in your container spec**:
 
 Logs will appear in **Grafana Loki**, tenant: `httplogs`
 
-![image.png](Logbook%20%E2%80%94%20Evolving%20Distributed%20Tracing%20&%20Observabi%201d2c0265ac648029addcc6e81a7425a7/6a37e7a7-c2d2-4d5b-9c09-a1afa146c95b.png)
+![image.png](assets/6a37e7a7-c2d2-4d5b-9c09-a1afa146c95b.png)
 
 ## 🔍 Example: Filter Logs for a Specific Service
 
-Let’s say you want to view all **`POST` requests to `/v3/auth/otp/signup/generate`** with status **200** and of type **response**.
+Let's say you want to view all **`POST` requests to `/v3/auth/otp/signup/generate`** with status **200** and of type **response**.
 
 ### ✅ LogQL Query:
 
@@ -118,7 +118,7 @@ Let’s say you want to view all **`POST` requests to `/v3/auth/otp/signup/gener
 
 ### 📍 2. **Filter by Path Prefix (Fuzzy Search)**
 
-If exact match doesn’t work (e.g., dynamic path values), use `|~` for regex:
+If exact match doesn't work (e.g., dynamic path values), use `|~` for regex:
 
 ```json
 {service="order-service", type="response"} |~ "/v3/auth/otp/.*

@@ -1,17 +1,18 @@
-# Welcome to MkDocs
+# Welcome to Platform Engineering KB
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
 
 ## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+    Platform Tools/
+        Platform sdk/           # Platform SDK documentation
+            Logging/           # Logging and observability features
+                logbook.md    # HTTP logging with Logbook
+        ...
+
+    Teleport/                 # Teleport documentation and guides
+        Getting Started/      # Quick start guides for Teleport
+        Access Requests/      # Managing access requests
+        ...
+
+

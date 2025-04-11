@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://bazaartechnologies.github.io/</loc>
-         <lastmod>2025-04-10</lastmod>
-    </url>
-    <url>
-         <loc>https://bazaartechnologies.github.io/defectdojo/</loc>
-         <lastmod>2025-04-10</lastmod>
+         <lastmod>2025-04-11</lastmod>
     </url>
     <url>
          <loc>https://bazaartechnologies.github.io/teleport/</loc>
-         <lastmod>2025-04-10</lastmod>
+         <lastmod>2025-04-11</lastmod>
+    </url>
+    <url>
+         <loc>https://bazaartechnologies.github.io/Platform%20Tools/Platform%20sdk/Logging/logbook/</loc>
+         <lastmod>2025-04-11</lastmod>
     </url>
 </urlset>

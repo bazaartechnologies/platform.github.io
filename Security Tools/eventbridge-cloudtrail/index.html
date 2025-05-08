@@ -8,19 +8,23 @@
       
       
       
+        <link rel="canonical" href="https://bazaartechnologies.github.io/Security%20Tools/eventbridge-cloudtrail/">
+      
+      
+        <link rel="prev" href="../dependabot/">
       
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>Platform Engingeering KB</title>
+        <title>EventBridge with Cloudtrail - Platform Engingeering KB</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
       
       
 
@@ -39,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#eventbridge-with-cloudtrail" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -69,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Platform Engingeering KB" class="md-header__button md-logo" aria-label="Platform Engingeering KB" data-md-component="logo">
+    <a href="../.." title="Platform Engingeering KB" class="md-header__button md-logo" aria-label="Platform Engingeering KB" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -89,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              EventBridge with Cloudtrail
             
           </span>
         </div>
@@ -167,7 +176,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Platform Engingeering KB" class="md-nav__button md-logo" aria-label="Platform Engingeering KB" data-md-component="logo">
+    <a href="../.." title="Platform Engingeering KB" class="md-nav__button md-logo" aria-label="Platform Engingeering KB" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -185,7 +194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -207,7 +216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/teleport/" class="md-nav__link">
+      <a href="../../teleport/" class="md-nav__link">
         
   
   
@@ -343,7 +352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Platform%20Tools/Platform%20sdk/Logging/logbook/" class="md-nav__link">
+      <a href="../../Platform%20Tools/Platform%20sdk/Logging/logbook/" class="md-nav__link">
         
   
   
@@ -386,18 +395,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -413,7 +424,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Security Tools
@@ -427,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Security%20Tools/defectdojo/" class="md-nav__link">
+      <a href="../defectdojo/" class="md-nav__link">
         
   
   
@@ -450,7 +461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Security%20Tools/dependabot/" class="md-nav__link">
+      <a href="../dependabot/" class="md-nav__link">
         
   
   
@@ -470,10 +481,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/Security%20Tools/eventbridge-cloudtrail/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    EventBridge with Cloudtrail
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -484,6 +517,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-eventbridge-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating EventBridge Rule
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploying-on-terraform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploying on Terraform
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -513,6 +611,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-eventbridge-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating EventBridge Rule
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploying-on-terraform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploying on Terraform
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -524,8 +677,66 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="eventbridge-with-cloudtrail">EventBridge with Cloudtrail</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#creating-eventbridge-rule">Creating EventBridge Rule</a></li>
+<li><a href="#deploying-on-terraform">Deploying on Terraform</a></li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Integrating AWS CloudTrail with Amazon EventBridge provides a powerful solution for real-time alerting and automated responses to changes in your AWS environment. CloudTrail captures API activity across your account as management events, which include operations such as creating or modifying resources. By routing these events to EventBridge, you can define rules that trigger workflows, send alerts (e.g., via SNS or Lambda), or initiate remediations based on specific activity patterns.</p>
+<p>A key advantage of this integration is that management events are free to ingest into EventBridge, making it a cost-effective approach for continuous monitoring and security automation without additional data transfer charges for these event types</p>
+<h2 id="creating-eventbridge-rule">Creating EventBridge Rule</h2>
+<p>AWS EventBridge provides a sandbox for creating and testing rules, to use this simply open EventBridge from AWS Console.</p>
+<ol>
+<li>Open the sandbox and select a sample event.</li>
+</ol>
+<p><img alt="eb" src="../Eventbridge-1.png" /></p>
+<ol>
+<li>Select <code>Event Source</code>, <code>AWS Service</code> and <code>Event Type</code> to generate the event pattern, then click <code>Test pattern</code> to validate the pattern.</li>
+</ol>
+<p><img alt="eb-2" src="../Eventbridge-2.png" /></p>
+<blockquote>
+<p>You can create more complex rules by adding comparison operators in event pattern, you can find about this <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-pattern-operators.html">here</a></p>
+</blockquote>
+<h2 id="deploying-on-terraform">Deploying on Terraform</h2>
+<p>You can add rules through <code>iac</code> repository by adding your new rule in <code>eventbridge</code> module which is present inside <code>eventbridge_rule</code> folder</p>
+<p><img alt="eb-3" src="../Eventbridge-3.png" />   </p>
+<p>This is the format for a rule which alerts on S3 ACL and policy changes, the <code>event_pattern</code> is the same event pattern that was generated in EventBridge sandbox.</p>
+<pre><code class="language-json">s3_bucket_acl_and_policy = {
+      name        = &quot;s3_bucket_acl_and_policy&quot;
+      description = &quot;Rule to trigger on S3 bucket policy and ACL changes&quot;
+      state       = &quot;ENABLED&quot;
+      event_pattern = {
+        &quot;source&quot;: [&quot;aws.s3&quot;],
+        &quot;detail-type&quot;: [&quot;AWS API Call via CloudTrail&quot;],
+        &quot;detail&quot;: {
+          &quot;eventSource&quot;: [&quot;s3.amazonaws.com&quot;],
+          &quot;eventName&quot;: [&quot;PutBucketPolicy&quot;, &quot;DeleteBucketPolicy&quot;, &quot;PutBucketPublicAccessBlock&quot;]
+        }
+      }
+    }
+</code></pre>
+<h2 id="references">References</h2>
+<p><a href="https://github.com/password123456/setup-aws-cloudtrail-events-detection-with-eventbridge-and-lambda">AWS Eventbridge with lambda</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -561,10 +772,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": [], "search": "/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

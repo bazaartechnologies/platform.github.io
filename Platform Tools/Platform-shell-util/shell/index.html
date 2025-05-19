@@ -22,7 +22,7 @@
     
     
       
-        <title>Shell - Platform Engingeering KB</title>
+        <title>Shell utility for calling internal APIs 🧠 - Platform Engingeering KB</title>
       
     
     
@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#shell-utility-for-calling-internal-apis" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -95,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Shell
+              Shell utility for calling internal APIs 🧠
             
           </span>
         </div>
@@ -436,18 +441,79 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Shell utility for calling internal APIs 🧠
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Shell
+    Shell utility for calling internal APIs 🧠
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-there-was-a-need-for-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧘 Why there was a need for it?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-argocd-solved-the-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 How ArgoCD solved the problem?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 How to use it?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -600,6 +666,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-there-was-a-need-for-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧘 Why there was a need for it?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-argocd-solved-the-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 How ArgoCD solved the problem?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 How to use it?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -615,9 +718,23 @@
 
 
 
-  <h1>Shell</h1>
-
-<p>Testing</p>
+<h1 id="shell-utility-for-calling-internal-apis">Shell utility for calling internal APIs 🧠</h1>
+<h2 id="why-there-was-a-need-for-it">🧘 Why there was a need for it?</h2>
+<ul>
+<li>We need to make the API endpoints public on gateway that were meant to be called internally by the devs only, so didn't made sense to make them public hence to call the APIs from within the network we used ArgoCD.</li>
+</ul>
+<h2 id="how-argocd-solved-the-problem">🚀 How ArgoCD solved the problem?</h2>
+<ul>
+<li>ArgoCD offers web-based-terminal through which we can take shell into a pods right from ArgoCD UI and make a curl request from there to call the internal API.</li>
+</ul>
+<p>https://argo-cd.readthedocs.io/en/latest/operator-manual/web_based_terminal/</p>
+<h2 id="how-to-use-it">💡 How to use it?</h2>
+<ol>
+<li>Login to ArgoCD</li>
+<li>Search in apps 'util'</br>
+<img alt="image.png" src="../assets/util-0.png" /></br></li>
+<li>Here you'll see multiple utils now as per the naming convention like</br><strong>util-finance-platform-fintech</strong></li>
+</ol>
 
 
 

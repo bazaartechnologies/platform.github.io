@@ -733,7 +733,19 @@
 <li>Login to ArgoCD</li>
 <li>Search in apps 'util'</br>
 <img alt="image.png" src="../assets/util-0.png" /></br></li>
-<li>Here you'll see multiple utils now as per the naming convention like</br><strong>util-finance-platform-fintech</strong></li>
+<li>Here you'll see multiple utils now as per the naming convention like</br><strong>util-fintech-platform-fintech</strong></br>
+<strong>fintech-platform</strong> is the domain
+<strong>fintech</strong> is the cluster</li>
+<li>Click on the util in which your service lies according to the domain and cluster</li>
+<li>Just click on the sync button
+<img alt="image.png" src="../assets/util-1.png" /></br>
+<strong>After syncing you'll see the blue progressing icon that means session has started for 5 mins</strong>
+<img alt="image.png" src="../assets/util-2.png" /></br></li>
+<li>Click on the pod you'll switch to terminal tab
+<img alt="image.png" src="../assets/util-3.png" /></br></li>
+<li>I ran this curl command but you will run the actual endpoint which you wish to call but make sure the service you are calling is in the domain fintech-platform and running in EKS cluster fintech account for rest services we have more utils w.r.t that
+<code>curl bazaar-lending-service-base.lending-platform.svc.cluster.local/actuator/health</code>
+<img alt="image.png" src="../assets/util-4.png" /></br></li>
 </ol>
 
 

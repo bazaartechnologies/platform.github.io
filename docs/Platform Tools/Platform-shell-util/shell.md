@@ -69,7 +69,7 @@ curl {service-name}.{namespace}.svc.cluster.local/{endpoint}
 
 **Example**:
 ```bash
-curl bazaar-lending-service-base.lending-platform.svc.cluster.local/actuator/health
+curl bazaar-deposit-service-base.fintech-platform.svc.cluster.local/actuator/health
 ```
 
 ![API Call Example](assets/util-4.png)

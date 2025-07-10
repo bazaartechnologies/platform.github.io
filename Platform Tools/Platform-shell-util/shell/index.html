@@ -22,7 +22,7 @@
     
     
       
-        <title>Shell utility for calling internal APIs 🧠 - Platform Engingeering KB</title>
+        <title>Platform Shell Utility 🛠️ - Platform Engingeering KB</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#shell-utility-for-calling-internal-apis" class="md-skip">
+        <a href="#platform-shell-utility" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Shell utility for calling internal APIs 🧠
+              Platform Shell Utility 🛠️
             
           </span>
         </div>
@@ -449,7 +449,7 @@
   
   
   <span class="md-ellipsis">
-    Shell utility for calling internal APIs 🧠
+    Platform Shell Utility 🛠️
     
   </span>
   
@@ -462,7 +462,7 @@
   
   
   <span class="md-ellipsis">
-    Shell utility for calling internal APIs 🧠
+    Platform Shell Utility 🛠️
     
   </span>
   
@@ -485,27 +485,213 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-there-was-a-need-for-it" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      🧘 Why there was a need for it?
+      🎯 Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-argocd-solved-the-problem" class="md-nav__link">
+  <a href="#why-use-this-tool" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 How ArgoCD solved the problem?
+      🔍 Why Use This Tool?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-use-it" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      💡 How to use it?
+      📋 Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Step-by-Step Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Step-by-Step Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-access-argocd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Access ArgoCD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-find-the-appropriate-utility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Find the Appropriate Utility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-select-your-target-utility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Select Your Target Utility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-sync-the-utility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Sync the Utility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-access-the-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Access the Terminal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-execute-your-api-call" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Execute Your API Call
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Important Notes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 Important Notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-naming-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service Naming Convention
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-kubernetes-east-west-urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Kubernetes East-West URLs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-squads-and-clusters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Squads and Clusters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Common Use Cases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Common Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#health-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Health Checks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Testing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="❓ Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔐 Security Considerations
     </span>
   </a>
   
@@ -676,27 +862,213 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-there-was-a-need-for-it" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      🧘 Why there was a need for it?
+      🎯 Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-argocd-solved-the-problem" class="md-nav__link">
+  <a href="#why-use-this-tool" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 How ArgoCD solved the problem?
+      🔍 Why Use This Tool?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-use-it" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      💡 How to use it?
+      📋 Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Step-by-Step Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Step-by-Step Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-access-argocd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Access ArgoCD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-find-the-appropriate-utility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Find the Appropriate Utility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-select-your-target-utility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Select Your Target Utility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-sync-the-utility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Sync the Utility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-access-the-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Access the Terminal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-execute-your-api-call" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Execute Your API Call
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Important Notes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 Important Notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-naming-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service Naming Convention
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-kubernetes-east-west-urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Kubernetes East-West URLs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-squads-and-clusters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Squads and Clusters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Common Use Cases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Common Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#health-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Health Checks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Testing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="❓ Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔐 Security Considerations
     </span>
   </a>
   
@@ -718,35 +1090,146 @@
 
 
 
-<h1 id="shell-utility-for-calling-internal-apis">Shell utility for calling internal APIs 🧠</h1>
-<h2 id="why-there-was-a-need-for-it">🧘 Why there was a need for it?</h2>
+<h1 id="platform-shell-utility">Platform Shell Utility 🛠️</h1>
+<p>A secure way to call internal APIs within our EKS clusters without exposing them publicly.</p>
+<h2 id="overview">🎯 Overview</h2>
+<p>The Platform Shell Utility provides developers with a secure method to access internal APIs that are not exposed through our public API gateway. Instead of making these development/debugging endpoints public, we leverage ArgoCD's web-based terminal to execute API calls directly from within the cluster network.</p>
+<h2 id="why-use-this-tool">🔍 Why Use This Tool?</h2>
 <ul>
-<li>We need to make the API endpoints public on gateway that were meant to be called internally by the devs only, so didn't made sense to make them public hence to call the APIs from within the network we used ArgoCD.</li>
+<li><strong>Security First</strong>: Keep internal APIs private and secure</li>
+<li><strong>Network Access</strong>: Call services that are only accessible within the cluster network</li>
+<li><strong>No Gateway Exposure</strong>: Avoid exposing debug/internal endpoints publicly</li>
+<li><strong>Easy Access</strong>: Simple web-based interface through ArgoCD</li>
 </ul>
-<h2 id="how-argocd-solved-the-problem">🚀 How ArgoCD solved the problem?</h2>
+<h2 id="prerequisites">📋 Prerequisites</h2>
 <ul>
-<li>ArgoCD offers web-based-terminal through which we can take shell into a pods right from ArgoCD UI and make a curl request from there to call the internal API.</li>
+<li>Access to ArgoCD dashboard</li>
+<li>Knowledge of the target service's squad and cluster location</li>
 </ul>
-<p>https://argo-cd.readthedocs.io/en/latest/operator-manual/web_based_terminal/</p>
-<h2 id="how-to-use-it">💡 How to use it?</h2>
+<h2 id="step-by-step-guide">🚀 Step-by-Step Guide</h2>
+<h3 id="step-1-access-argocd">Step 1: Access ArgoCD</h3>
 <ol>
-<li>Login to ArgoCD</li>
-<li>Search in apps 'util'</br>
-<img alt="image.png" src="../assets/util-0.png" /></br></li>
-<li>Here you'll see multiple utils now as per the naming convention like</br><strong>util-fintech-platform-fintech</strong></br>
-<strong>fintech-platform</strong> is the domain
-<strong>fintech</strong> is the cluster</li>
-<li>Click on the util in which your service lies according to the domain and cluster</li>
-<li>Just click on the sync button
-<img alt="image.png" src="../assets/util-1.png" /></br>
-<strong>After syncing you'll see the blue progressing icon that means session has started for 5 mins</strong>
-<img alt="image.png" src="../assets/util-2.png" /></br></li>
-<li>Click on the pod you'll switch to terminal tab
-<img alt="image.png" src="../assets/util-3.png" /></br></li>
-<li>I ran this curl command but you will run the actual endpoint which you wish to call but make sure the service you are calling is in the domain fintech-platform and running in EKS cluster fintech account for rest services we have more utils w.r.t that
-<code>curl bazaar-lending-service-base.lending-platform.svc.cluster.local/actuator/health</code>
-<img alt="image.png" src="../assets/util-4.png" /></br></li>
+<li>Navigate to your ArgoCD dashboard</li>
+<li>Ensure you have the necessary permissions to access utilities</li>
 </ol>
+<h3 id="step-2-find-the-appropriate-utility">Step 2: Find the Appropriate Utility</h3>
+<ol>
+<li>In the ArgoCD search bar, type <code>util</code></li>
+<li>You'll see multiple utility applications following this naming pattern:
+   <code>util-{squad}-{cluster}</code></li>
+</ol>
+<p><strong>Examples</strong>: 
+   - <code>util-finance-fintech</code> (finance squad, fintech cluster)
+   - <code>util-finance-prod</code> (finance squad, prod cluster)
+   - <code>util-biz-platform-prod</code> (biz-platform squad, prod cluster)</p>
+<p><img alt="Utility Selection" src="../assets/util-0.png" /></p>
+<h3 id="step-3-select-your-target-utility">Step 3: Select Your Target Utility</h3>
+<p>Choose the utility that matches your service's squad and cluster:
+- Identify your service's squad (e.g., <code>finance</code>, <code>biz-platform</code>, <code>customer-app</code>, <code>web-app</code>, <code>ops</code>)
+- Identify your service's cluster:
+  - <strong>Finance squad</strong>: <code>fintech</code> or <code>prod</code>
+  - <strong>All other squads</strong>: <code>prod</code> only
+- Click on the corresponding utility application</p>
+<h3 id="step-4-sync-the-utility">Step 4: Sync the Utility</h3>
+<ol>
+<li>Click the <strong>Sync</strong> button to start a new session</li>
+</ol>
+<p><img alt="Sync Button" src="../assets/util-1.png" /></p>
+<ol>
+<li>Wait for the blue progress indicator - this means your 5-minute session has started</li>
+</ol>
+<p><img alt="Session Started" src="../assets/util-2.png" /></p>
+<h3 id="step-5-access-the-terminal">Step 5: Access the Terminal</h3>
+<ol>
+<li>Click on the pod to switch to the terminal tab</li>
+</ol>
+<p><img alt="Terminal Access" src="../assets/util-3.png" /></p>
+<h3 id="step-6-execute-your-api-call">Step 6: Execute Your API Call</h3>
+<p>Now you can run curl commands to call internal services. Use the following format:</p>
+<pre><code class="language-bash">curl {service-name}.{namespace}.svc.cluster.local/{endpoint}
+</code></pre>
+<p><strong>Example</strong>:</p>
+<pre><code class="language-bash">curl bazaar-lending-service-base.lending-platform.svc.cluster.local/actuator/health
+</code></pre>
+<p><img alt="API Call Example" src="../assets/util-4.png" /></p>
+<h2 id="important-notes">📝 Important Notes</h2>
+<h3 id="service-naming-convention">Service Naming Convention</h3>
+<ul>
+<li>Services follow the pattern: <code>{service-name}.{namespace}.svc.cluster.local</code></li>
+<li>Always verify your service is running in the correct namespace and cluster</li>
+<li>Use the appropriate utility for your target service's location</li>
+</ul>
+<h3 id="understanding-kubernetes-east-west-urls">Understanding Kubernetes East-West URLs</h3>
+<p>The URL pattern <code>{service-name}.{namespace}.svc.cluster.local</code> is a <strong>Kubernetes DNS name</strong> used for internal service-to-service communication within the cluster (also known as "east-west" traffic).</p>
+<p><strong>URL Breakdown</strong>:</p>
+<pre><code>service-name.namespace.svc.cluster.local
+    │         │        │    │
+    │         │        │    └── Cluster domain (default: cluster.local)
+    │         │        └─────── Service type indicator
+    │         └───────────────── Kubernetes namespace
+    └─────────────────────────── Service name
+</code></pre>
+<p><strong>Example</strong>: <code>bazaar-lending-service-base.lending-platform.svc.cluster.local</code>
+- <code>bazaar-lending-service-base</code> = Service name
+- <code>lending-platform</code> = Namespace where the service is deployed
+- <code>svc</code> = Indicates this is a Kubernetes Service
+- <code>cluster.local</code> = Default cluster domain</p>
+<p><strong>Why This Works</strong>:
+- Kubernetes has an internal DNS server that resolves these names
+- Services within the same cluster can communicate using these DNS names
+- No need for external IPs or load balancers for internal communication
+- Provides service discovery and load balancing automatically</p>
+<h3 id="session-management">Session Management</h3>
+<ul>
+<li>Each session lasts <strong>10 minutes</strong></li>
+<li>Sessions automatically expire for security</li>
+<li>You can start a new session by syncing again</li>
+</ul>
+<h3 id="supported-squads-and-clusters">Supported Squads and Clusters</h3>
+<p>Make sure to use the correct utility for your service:</p>
+<p><strong>Finance Squad (Multiple Clusters)</strong>:
+- <strong>finance/fintech</strong>: Use <code>util-finance-fintech</code>
+- <strong>finance/prod</strong>: Use <code>util-finance-prod</code></p>
+<p><strong>Rest Squads (Prod Cluster Only)</strong>:
+- <strong>biz-platform/prod</strong>: Use <code>util-biz-platform-prod</code>
+- <strong>customer-app/prod</strong>: Use <code>util-customer-app-prod</code>
+- <strong>web-app/prod</strong>: Use <code>util-web-app-prod</code>
+- <strong>ops/prod</strong>: Use <code>util-ops-prod</code></p>
+<h2 id="common-use-cases">🔧 Common Use Cases</h2>
+<h3 id="health-checks">Health Checks</h3>
+<pre><code class="language-bash"># Finance squad service example in fintech
+curl service-name-base.lending-platform.svc.cluster.local/actuator/health
+
+# Rest squad service example in prod
+curl service-name-base.customer-platform.svc.cluster.local/actuator/health
+</code></pre>
+<h3 id="api-testing">API Testing</h3>
+<pre><code class="language-bash"># Business platform service
+curl -X POST service-name-base.biz-platform.svc.cluster.local/api/endpoint \
+  -H &quot;Content-Type: application/json&quot; \
+  -d '{&quot;key&quot;: &quot;value&quot;}'
+</code></pre>
+<h2 id="troubleshooting">❓ Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<p><strong>Service Not Found (404)</strong>
+- Verify the service name and namespace
+- Check if the service is running in the expected cluster
+- Ensure you're using the correct utility for the target squad</p>
+<p><strong>Connection Timeout</strong>
+- Confirm the service is healthy and running
+- Check if you're in the correct network namespace
+- Verify the service port (default is usually 5000)</p>
+<p><strong>Session Expired</strong>
+- Sessions last only 10 minutes
+- Simply sync the utility again to start a new session</p>
+<h2 id="security-considerations">🔐 Security Considerations</h2>
+<ul>
+<li>Sessions are time-limited for security</li>
+<li>Only internal cluster services are accessible</li>
+<li>No external internet access from utility pods</li>
+</ul>
+<hr />
+<p><strong>Need Help?</strong> Contact the Platform Team or check our internal documentation for more specific use cases.</p>
 
 
 
